@@ -1,0 +1,13 @@
+//IMPORT BASE STYLES
+@import 'base/_vars';
+@import 'base/_functions';
+@import 'base/_libs';
+@import 'base/_fonts';
+@import 'base/_default';
+@import 'base/_media';
+
+//IMPORT STYLES FROM BLOCKS
+@import 'blocks/_header';
+@import 'blocks/_footer';
+
+// CUSTOM STYLES
