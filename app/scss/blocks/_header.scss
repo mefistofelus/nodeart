@@ -101,7 +101,7 @@
     height: 1px;
     background-color: #fff;
     transform: scale(0);
-    transition: .35s ease-out;
+    transition: $transition ease-out;
   }
 
   &:hover::after {
