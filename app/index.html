@@ -18,9 +18,9 @@
       <div class="container">
         <div class="header__top">
           <div class="header__logo">
-            <div class="logo__img">
-              <img src="../img/logo.jpg" width="100px" height="100px" alt="logo">
-            </div>
+            <a href="/" class="logo__img">
+              <img src="img/logo.jpg" width="100px" height="100px" alt="logo">
+            </a>
             <!-- /.logo__img -->
             <div class="logo__text">
               <div class="logo__title">Название компании</div>
@@ -71,8 +71,104 @@
       </div>
       <!-- /.header__nav -->
     </header>
+    <!-- /.header -->
 
     <main>
+      <!-- slider -->
+      <section class="slider">
+        <div class="slider__item">
+          <img class="slider__img" src="img/slide-1.png" alt="Slider image 1">
+        </div>
+        <div class="slider__item">
+          <img class="slider__img" src="img/slide-2.png" alt="Slider image 2">
+        </div>
+      </section>
+      <!-- /.slider -->
+
+      <!-- /.breadcrumbs -->
+      <div class="container">
+        <ul class="breadcrumbs">
+          <li class="brd__item">
+            <a href="#" class="brd__link">Главная</a>
+          </li>
+          <!-- /.brd__item -->
+          <li class="brd__item">
+            <a href="#" class="brd__link">Каталог</a>
+          </li>
+          <!-- /.brd__item -->
+          <li class="brd__item">
+            <a href="#" class="brd__link">Бытовая техника</a>
+          </li>
+          <!-- /.brd__item -->
+        </ul>
+      </div>
+      <!-- /.breadcrumbs -->
+
+      <!-- /.catalogue -->
+      <section class="catalogue">
+        <div class="container">
+          <aside class="sidebar">
+            <ul class="sidebar__menu">
+              <li class="menu__item">
+                <a href="#" class="menu__link">Автомобили</a>
+              </li>
+              <!-- /.menu__item -->
+              <li class="menu__item dropdown">
+                <a href="#" class="menu__link">Бытовая техника</a>
+                <!-- /.menu__link -->
+                <ul class="dropdown__menu">
+                  <li class="drop_item active">
+                    <a href="" class="drop__link">Микроволновки</a>
+                    <!-- /.drop__link -->
+                  </li>
+                  <!-- /.drop_item -->
+                  <li class="drop_item">
+                    <a href="" class="drop__link">Холодильники</a>
+                    <!-- /.drop__link -->
+                  </li>
+                  <!-- /.drop_item -->
+                  <li class="drop_item">
+                    <a href="" class="drop__link">Посудомоечные машины</a>
+                    <!-- /.drop__link -->
+                  </li>
+                  <!-- /.drop_item -->
+                  <li class="drop_item">
+                    <a href="" class="drop__link">Чайники</a>
+                    <!-- /.drop__link -->
+                  </li>
+                  <!-- /.drop_item -->
+                </ul>
+                <!-- /.dropdown__menu -->
+              </li>
+              <!-- /.menu__item -->
+              <li class="menu__item">
+                <a href="#" class="menu__link">Мобильная техника</a>
+              </li>
+              <!-- /.menu__item -->
+              <li class="menu__item">
+                <a href="#" class="menu__link">Компьютеры</a>
+              </li>
+              <!-- /.menu__item -->
+              <li class="menu__item">
+                <a href="#" class="menu__link">Одежда</a>
+              </li>
+              <!-- /.menu__item -->
+              <li class="menu__item">
+                <a href="#" class="menu__link">Недвижимость</a>
+              </li>
+              <!-- /.menu__item -->
+            </ul>
+          </aside>
+          <!-- /.aside -->
+
+          <div class="products">
+            <div class="product__card"></div>
+          </div>
+          <!-- /.products -->
+
+        </div>
+      </section>
+      <!-- /.catalogue -->
 
     </main>
     <!-- /.main -->
@@ -81,7 +177,6 @@
 
     </footer>
     <!-- /.footer -->
-
 
     <script src="js/scripts.min.js"></script>
   </body>
