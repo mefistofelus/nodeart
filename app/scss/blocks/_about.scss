@@ -1,0 +1,35 @@
+.about {
+  margin: rem(35) 0;
+  padding: rem(25) 0;
+  border-top: 1px solid #777777;
+}
+
+.about__text {
+  display: flex;
+  align-items: start;
+  justify-content: space-between;
+
+  @include _768 {
+    flex-direction: column;
+  }
+
+  &--left {
+    width: 50%;
+    padding-right: rem(17);
+
+    @include _768 {
+      width: 100%;
+      padding: 10px;
+    }
+  }
+
+  &--right {
+    width: 50%;
+    padding-left: rem(17);
+
+    @include _768 {
+      width: 100%;
+      padding: 10px;
+    }
+  }
+}

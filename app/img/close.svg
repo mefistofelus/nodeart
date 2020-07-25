@@ -1,0 +1,12 @@
+<svg id="close.png" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="27" height="27" viewBox="0 0 27 27">
+  <defs>
+    <style>
+      .cls-1 {
+        fill: #fff;
+        fill-rule: evenodd;
+      }
+    </style>
+  </defs>
+  <image id="Rectangle_8" data-name="Rectangle 8" width="27" height="27" xlink:href="data:img/png;base64,iVBORw0KGgoAAAANSUhEUgAAABsAAAAbCAYAAACN1PRVAAAAMUlEQVRIie3NMQ0AMAwEsWtJP/yUQJUlUqYzAZ8kxZK7FWFmZmZm9mVm1jIza5nNAQ+4XgKagIEzNAAAAABJRU5ErkJggg=="/>
+  <path id="Shape_7_copy_2" data-name="Shape 7 copy 2" class="cls-1" d="M952.992,263.56l0.568-.568,14.448,14.448-0.568.568Zm15.016,0-0.568-.568L952.992,277.44l0.568,0.568Z" transform="translate(-947 -257)"/>
+</svg>

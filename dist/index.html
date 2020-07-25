@@ -12,7 +12,7 @@
     <title>NodArt Source</title>
   </head>
 
-  <body class="page-wrapper">
+  <body class="page-wrapper" id="body-js">
 
     <header class="header">
       <div class="container">
@@ -37,7 +37,7 @@
             <!-- /.header-phone -->
             <a href="tel:+7(499) 777-77-77" class="header-phone">+7(499) 777-77-77</a>
             <!-- /.header-phone -->
-            <a href="#" class="callback-link">Обратная связь</a>
+            <a href="#" class="callback-link" id="callback-link-js">Обратная связь</a>
             <!-- /.callback-link -->
           </div>
           <!-- /.header__contacts -->
@@ -75,7 +75,7 @@
 
     <main>
       <!-- slider -->
-      <section class="slider">
+      <section class="slider" id="slider-js">
         <div class="slider__item">
           <img class="slider__img" src="img/slide-1.png" alt="Slider image 1">
         </div>
@@ -104,10 +104,10 @@
       </div>
       <!-- /.breadcrumbs -->
 
-      <!-- /.catalogue -->
+      <!-- catalogue -->
       <div class="container">
         <section class="catalogue">
-          <aside class="sidebar">
+          <aside class="leftblock sidebar">
             <ul class="sidebar__menu">
               <li class="menu__item">
                 <a href="#" class="menu__link">Автомобили</a>
@@ -168,103 +168,157 @@
             </div>
             <!-- price-list -->
           </aside>
-          <!-- /.aside -->
+          <!-- /.sidebar -->
 
-          <!-- /.products -->
-          <div class="products">
-            <div class="product__card">
-              <img class="product__img" src="img/product-nophoto.jpg" alt="product image">
-              <a href="#" class="product__title stretched-link">Самый клевый чайник, который надо купить!</a>
-              <div class="product-info">
-                <div class="product__price">1 900 р.</div>
-                <button type="button" class="product__btn">
-                  <svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="28px"
-                    height="21px">
-                    <image x="0px" y="0px" width="28px" height="21px"
-                      xlink:href="data:img/png;base64,iVBORw0KGgoAAAANSUhEUgAAABwAAAAVCAQAAAD/C0bXAAAABGdBTUEAALGPC/xhBQAAACBjSFJNAAB6JgAAgIQAAPoAAACA6AAAdTAAAOpgAAA6mAAAF3CculE8AAAAAmJLR0QA/4ePzL8AAAAHdElNRQfkBxgMKgrgKIwGAAACG0lEQVQ4y33UUWjVZRjH8d/ZznS2TRSi3RgUjgkFLcXJBLVMCKEEyZCCoEihhhfeeNWVNyHsShSREJUuqq0uVglBV0klBJPQIGKNaiQxWImLNufWOft0sf+OO5un33Px532e//d5nvd5X96SLGkkSdKblPNK9mR9fshgfr0eSUqR3iTpzu70ZVdGYqVt8pUl/em1utgpM0VkfCXW7Atw2fPuYd7TtViXWdzxtQE90WGHPn12ekz0FRnfELfARbFOr50u4C9bFtPElVpjf9vsKC54wgbR5UUVo+Jc7Z/3luo3pT1JMptKZlOJJGuyPuUkbdmYUhaSzGUulSSVnK3N0suoOmaLTrG1yPymmATnxRo9buGz+9OIFjcxXDhKPgDD+s3jjm4RL4Fnl4PRj6rthavDYG1H4/YV3m/xjXI9uMEELi07lOcMOOOoh4v1PlXqz3TxcxLTHl11GZbsY4xZtxp83D94twHW5R5O1HvLSZLfMpQjeT03Uo2UslwLOZi1uZ33U68iwzZV/6dzK/soF/z3OZ3DKeXfSEuakiSVVNOc5mzMQ+lJOZUHVYxo06LLk9q1ale2yVM6tTgMXq2vWN/AOyZNu6JTHDLmrht6xJf4UWsjcC/mTeEXn1vAJL6z3wh4qxF4HEPerg3kdwfMmjJarIcbgc9gwQx+8qk5TOGa/YZ84iN7G+/xhJ/94UOPiBeMmHB12QtQZ/8B+a6uuTujQTgAAAAASUVORK5CYII=" />
-                  </svg>
-                </button>
+          <!-- products -->
+          <div class="centerblock products">
+            <div class="products__container">
+              <div class="product__col">
+                <div class="product__card">
+                  <img class="product__img" src="img/product-nophoto.jpg" alt="product image">
+                  <a href="#" class="product__title stretched-link">Самый клевый чайник, который надо купить!</a>
+                  <div class="product-info">
+                    <div class="product__price">1 900 р.</div>
+                    <button type="button" class="product__btn">
+                      <svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="28px"
+                        height="21px">
+                        <image x="0px" y="0px" width="28px" height="21px"
+                          xlink:href="data:img/png;base64,iVBORw0KGgoAAAANSUhEUgAAABwAAAAVCAQAAAD/C0bXAAAABGdBTUEAALGPC/xhBQAAACBjSFJNAAB6JgAAgIQAAPoAAACA6AAAdTAAAOpgAAA6mAAAF3CculE8AAAAAmJLR0QA/4ePzL8AAAAHdElNRQfkBxgMKgrgKIwGAAACG0lEQVQ4y33UUWjVZRjH8d/ZznS2TRSi3RgUjgkFLcXJBLVMCKEEyZCCoEihhhfeeNWVNyHsShSREJUuqq0uVglBV0klBJPQIGKNaiQxWImLNufWOft0sf+OO5un33Px532e//d5nvd5X96SLGkkSdKblPNK9mR9fshgfr0eSUqR3iTpzu70ZVdGYqVt8pUl/em1utgpM0VkfCXW7Atw2fPuYd7TtViXWdzxtQE90WGHPn12ekz0FRnfELfARbFOr50u4C9bFtPElVpjf9vsKC54wgbR5UUVo+Jc7Z/3luo3pT1JMptKZlOJJGuyPuUkbdmYUhaSzGUulSSVnK3N0suoOmaLTrG1yPymmATnxRo9buGz+9OIFjcxXDhKPgDD+s3jjm4RL4Fnl4PRj6rthavDYG1H4/YV3m/xjXI9uMEELi07lOcMOOOoh4v1PlXqz3TxcxLTHl11GZbsY4xZtxp83D94twHW5R5O1HvLSZLfMpQjeT03Uo2UslwLOZi1uZ33U68iwzZV/6dzK/soF/z3OZ3DKeXfSEuakiSVVNOc5mzMQ+lJOZUHVYxo06LLk9q1ale2yVM6tTgMXq2vWN/AOyZNu6JTHDLmrht6xJf4UWsjcC/mTeEXn1vAJL6z3wh4qxF4HEPerg3kdwfMmjJarIcbgc9gwQx+8qk5TOGa/YZ84iN7G+/xhJ/94UOPiBeMmHB12QtQZ/8B+a6uuTujQTgAAAAASUVORK5CYII=" />
+                      </svg>
+                    </button>
+                  </div>
+                </div>
+                <!-- /.product__card -->
               </div>
-            </div>
-            <!-- /.product__card -->
-            <div class="product__card">
-              <img class="product__img" src="img/product-nophoto.jpg" alt="product image">
-              <a href="#" class="product__title stretched-link">Самый клевый чайник, который надо купить!</a>
-              <div class="product-info">
-                <div class="product__price">1 900 р.</div>
-                <button type="button" class="product__btn">
-                  <svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="28px"
-                    height="21px">
-                    <image x="0px" y="0px" width="28px" height="21px"
-                      xlink:href="data:img/png;base64,iVBORw0KGgoAAAANSUhEUgAAABwAAAAVCAQAAAD/C0bXAAAABGdBTUEAALGPC/xhBQAAACBjSFJNAAB6JgAAgIQAAPoAAACA6AAAdTAAAOpgAAA6mAAAF3CculE8AAAAAmJLR0QA/4ePzL8AAAAHdElNRQfkBxgMKgrgKIwGAAACG0lEQVQ4y33UUWjVZRjH8d/ZznS2TRSi3RgUjgkFLcXJBLVMCKEEyZCCoEihhhfeeNWVNyHsShSREJUuqq0uVglBV0klBJPQIGKNaiQxWImLNufWOft0sf+OO5un33Px532e//d5nvd5X96SLGkkSdKblPNK9mR9fshgfr0eSUqR3iTpzu70ZVdGYqVt8pUl/em1utgpM0VkfCXW7Atw2fPuYd7TtViXWdzxtQE90WGHPn12ekz0FRnfELfARbFOr50u4C9bFtPElVpjf9vsKC54wgbR5UUVo+Jc7Z/3luo3pT1JMptKZlOJJGuyPuUkbdmYUhaSzGUulSSVnK3N0suoOmaLTrG1yPymmATnxRo9buGz+9OIFjcxXDhKPgDD+s3jjm4RL4Fnl4PRj6rthavDYG1H4/YV3m/xjXI9uMEELi07lOcMOOOoh4v1PlXqz3TxcxLTHl11GZbsY4xZtxp83D94twHW5R5O1HvLSZLfMpQjeT03Uo2UslwLOZi1uZ33U68iwzZV/6dzK/soF/z3OZ3DKeXfSEuakiSVVNOc5mzMQ+lJOZUHVYxo06LLk9q1ale2yVM6tTgMXq2vWN/AOyZNu6JTHDLmrht6xJf4UWsjcC/mTeEXn1vAJL6z3wh4qxF4HEPerg3kdwfMmjJarIcbgc9gwQx+8qk5TOGa/YZ84iN7G+/xhJ/94UOPiBeMmHB12QtQZ/8B+a6uuTujQTgAAAAASUVORK5CYII=" />
-                  </svg>
-                </button>
+              <!-- /.product__col -->
+              <div class="product__col">
+                <div class="product__card">
+                  <img class="product__img" src="img/product-nophoto.jpg" alt="product image">
+                  <a href="#" class="product__title stretched-link">Самый клевый чайник, который надо купить!</a>
+                  <div class="product-info">
+                    <div class="product__price">1 900 р.</div>
+                    <button type="button" class="product__btn">
+                      <svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="28px"
+                        height="21px">
+                        <image x="0px" y="0px" width="28px" height="21px"
+                          xlink:href="data:img/png;base64,iVBORw0KGgoAAAANSUhEUgAAABwAAAAVCAQAAAD/C0bXAAAABGdBTUEAALGPC/xhBQAAACBjSFJNAAB6JgAAgIQAAPoAAACA6AAAdTAAAOpgAAA6mAAAF3CculE8AAAAAmJLR0QA/4ePzL8AAAAHdElNRQfkBxgMKgrgKIwGAAACG0lEQVQ4y33UUWjVZRjH8d/ZznS2TRSi3RgUjgkFLcXJBLVMCKEEyZCCoEihhhfeeNWVNyHsShSREJUuqq0uVglBV0klBJPQIGKNaiQxWImLNufWOft0sf+OO5un33Px532e//d5nvd5X96SLGkkSdKblPNK9mR9fshgfr0eSUqR3iTpzu70ZVdGYqVt8pUl/em1utgpM0VkfCXW7Atw2fPuYd7TtViXWdzxtQE90WGHPn12ekz0FRnfELfARbFOr50u4C9bFtPElVpjf9vsKC54wgbR5UUVo+Jc7Z/3luo3pT1JMptKZlOJJGuyPuUkbdmYUhaSzGUulSSVnK3N0suoOmaLTrG1yPymmATnxRo9buGz+9OIFjcxXDhKPgDD+s3jjm4RL4Fnl4PRj6rthavDYG1H4/YV3m/xjXI9uMEELi07lOcMOOOoh4v1PlXqz3TxcxLTHl11GZbsY4xZtxp83D94twHW5R5O1HvLSZLfMpQjeT03Uo2UslwLOZi1uZ33U68iwzZV/6dzK/soF/z3OZ3DKeXfSEuakiSVVNOc5mzMQ+lJOZUHVYxo06LLk9q1ale2yVM6tTgMXq2vWN/AOyZNu6JTHDLmrht6xJf4UWsjcC/mTeEXn1vAJL6z3wh4qxF4HEPerg3kdwfMmjJarIcbgc9gwQx+8qk5TOGa/YZ84iN7G+/xhJ/94UOPiBeMmHB12QtQZ/8B+a6uuTujQTgAAAAASUVORK5CYII=" />
+                      </svg>
+                    </button>
+                  </div>
+                </div>
+                <!-- /.product__card -->
               </div>
-            </div>
-            <!-- /.product__card -->
-            <div class="product__card">
-              <img class="product__img" src="img/product-nophoto.jpg" alt="product image">
-              <a href="#" class="product__title stretched-link">Самый клевый чайник, который надо купить!</a>
-              <div class="product-info">
-                <div class="product__price">1 900 р.</div>
-                <button type="button" class="product__btn">
-                  <svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="28px"
-                    height="21px">
-                    <image x="0px" y="0px" width="28px" height="21px"
-                      xlink:href="data:img/png;base64,iVBORw0KGgoAAAANSUhEUgAAABwAAAAVCAQAAAD/C0bXAAAABGdBTUEAALGPC/xhBQAAACBjSFJNAAB6JgAAgIQAAPoAAACA6AAAdTAAAOpgAAA6mAAAF3CculE8AAAAAmJLR0QA/4ePzL8AAAAHdElNRQfkBxgMKgrgKIwGAAACG0lEQVQ4y33UUWjVZRjH8d/ZznS2TRSi3RgUjgkFLcXJBLVMCKEEyZCCoEihhhfeeNWVNyHsShSREJUuqq0uVglBV0klBJPQIGKNaiQxWImLNufWOft0sf+OO5un33Px532e//d5nvd5X96SLGkkSdKblPNK9mR9fshgfr0eSUqR3iTpzu70ZVdGYqVt8pUl/em1utgpM0VkfCXW7Atw2fPuYd7TtViXWdzxtQE90WGHPn12ekz0FRnfELfARbFOr50u4C9bFtPElVpjf9vsKC54wgbR5UUVo+Jc7Z/3luo3pT1JMptKZlOJJGuyPuUkbdmYUhaSzGUulSSVnK3N0suoOmaLTrG1yPymmATnxRo9buGz+9OIFjcxXDhKPgDD+s3jjm4RL4Fnl4PRj6rthavDYG1H4/YV3m/xjXI9uMEELi07lOcMOOOoh4v1PlXqz3TxcxLTHl11GZbsY4xZtxp83D94twHW5R5O1HvLSZLfMpQjeT03Uo2UslwLOZi1uZ33U68iwzZV/6dzK/soF/z3OZ3DKeXfSEuakiSVVNOc5mzMQ+lJOZUHVYxo06LLk9q1ale2yVM6tTgMXq2vWN/AOyZNu6JTHDLmrht6xJf4UWsjcC/mTeEXn1vAJL6z3wh4qxF4HEPerg3kdwfMmjJarIcbgc9gwQx+8qk5TOGa/YZ84iN7G+/xhJ/94UOPiBeMmHB12QtQZ/8B+a6uuTujQTgAAAAASUVORK5CYII=" />
-                  </svg>
-                </button>
+              <!-- /.product__col -->
+              <div class="product__col">
+                <div class="product__card">
+                  <img class="product__img" src="img/product-nophoto.jpg" alt="product image">
+                  <a href="#" class="product__title stretched-link">Самый клевый чайник, который надо купить!</a>
+                  <div class="product-info">
+                    <div class="product__price">1 900 р.</div>
+                    <button type="button" class="product__btn">
+                      <svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="28px"
+                        height="21px">
+                        <image x="0px" y="0px" width="28px" height="21px"
+                          xlink:href="data:img/png;base64,iVBORw0KGgoAAAANSUhEUgAAABwAAAAVCAQAAAD/C0bXAAAABGdBTUEAALGPC/xhBQAAACBjSFJNAAB6JgAAgIQAAPoAAACA6AAAdTAAAOpgAAA6mAAAF3CculE8AAAAAmJLR0QA/4ePzL8AAAAHdElNRQfkBxgMKgrgKIwGAAACG0lEQVQ4y33UUWjVZRjH8d/ZznS2TRSi3RgUjgkFLcXJBLVMCKEEyZCCoEihhhfeeNWVNyHsShSREJUuqq0uVglBV0klBJPQIGKNaiQxWImLNufWOft0sf+OO5un33Px532e//d5nvd5X96SLGkkSdKblPNK9mR9fshgfr0eSUqR3iTpzu70ZVdGYqVt8pUl/em1utgpM0VkfCXW7Atw2fPuYd7TtViXWdzxtQE90WGHPn12ekz0FRnfELfARbFOr50u4C9bFtPElVpjf9vsKC54wgbR5UUVo+Jc7Z/3luo3pT1JMptKZlOJJGuyPuUkbdmYUhaSzGUulSSVnK3N0suoOmaLTrG1yPymmATnxRo9buGz+9OIFjcxXDhKPgDD+s3jjm4RL4Fnl4PRj6rthavDYG1H4/YV3m/xjXI9uMEELi07lOcMOOOoh4v1PlXqz3TxcxLTHl11GZbsY4xZtxp83D94twHW5R5O1HvLSZLfMpQjeT03Uo2UslwLOZi1uZ33U68iwzZV/6dzK/soF/z3OZ3DKeXfSEuakiSVVNOc5mzMQ+lJOZUHVYxo06LLk9q1ale2yVM6tTgMXq2vWN/AOyZNu6JTHDLmrht6xJf4UWsjcC/mTeEXn1vAJL6z3wh4qxF4HEPerg3kdwfMmjJarIcbgc9gwQx+8qk5TOGa/YZ84iN7G+/xhJ/94UOPiBeMmHB12QtQZ/8B+a6uuTujQTgAAAAASUVORK5CYII=" />
+                      </svg>
+                    </button>
+                  </div>
+                </div>
+                <!-- /.product__card -->
               </div>
-            </div>
-            <!-- /.product__card -->
-            <div class="product__card">
-              <img class="product__img" src="img/product-nophoto.jpg" alt="product image">
-              <a href="#" class="product__title stretched-link">Самый клевый чайник, который надо купить!</a>
-              <div class="product-info">
-                <div class="product__price">1 900 р.</div>
-                <button type="button" class="product__btn">
-                  <svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="28px"
-                    height="21px">
-                    <image x="0px" y="0px" width="28px" height="21px"
-                      xlink:href="data:img/png;base64,iVBORw0KGgoAAAANSUhEUgAAABwAAAAVCAQAAAD/C0bXAAAABGdBTUEAALGPC/xhBQAAACBjSFJNAAB6JgAAgIQAAPoAAACA6AAAdTAAAOpgAAA6mAAAF3CculE8AAAAAmJLR0QA/4ePzL8AAAAHdElNRQfkBxgMKgrgKIwGAAACG0lEQVQ4y33UUWjVZRjH8d/ZznS2TRSi3RgUjgkFLcXJBLVMCKEEyZCCoEihhhfeeNWVNyHsShSREJUuqq0uVglBV0klBJPQIGKNaiQxWImLNufWOft0sf+OO5un33Px532e//d5nvd5X96SLGkkSdKblPNK9mR9fshgfr0eSUqR3iTpzu70ZVdGYqVt8pUl/em1utgpM0VkfCXW7Atw2fPuYd7TtViXWdzxtQE90WGHPn12ekz0FRnfELfARbFOr50u4C9bFtPElVpjf9vsKC54wgbR5UUVo+Jc7Z/3luo3pT1JMptKZlOJJGuyPuUkbdmYUhaSzGUulSSVnK3N0suoOmaLTrG1yPymmATnxRo9buGz+9OIFjcxXDhKPgDD+s3jjm4RL4Fnl4PRj6rthavDYG1H4/YV3m/xjXI9uMEELi07lOcMOOOoh4v1PlXqz3TxcxLTHl11GZbsY4xZtxp83D94twHW5R5O1HvLSZLfMpQjeT03Uo2UslwLOZi1uZ33U68iwzZV/6dzK/soF/z3OZ3DKeXfSEuakiSVVNOc5mzMQ+lJOZUHVYxo06LLk9q1ale2yVM6tTgMXq2vWN/AOyZNu6JTHDLmrht6xJf4UWsjcC/mTeEXn1vAJL6z3wh4qxF4HEPerg3kdwfMmjJarIcbgc9gwQx+8qk5TOGa/YZ84iN7G+/xhJ/94UOPiBeMmHB12QtQZ/8B+a6uuTujQTgAAAAASUVORK5CYII=" />
-                  </svg>
-                </button>
+              <!-- /.product__col -->
+              <div class="product__col">
+                <div class="product__card">
+                  <img class="product__img" src="img/product-nophoto.jpg" alt="product image">
+                  <a href="#" class="product__title stretched-link">Самый клевый чайник, который надо купить!</a>
+                  <div class="product-info">
+                    <div class="product__price">1 900 р.</div>
+                    <button type="button" class="product__btn">
+                      <svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="28px"
+                        height="21px">
+                        <image x="0px" y="0px" width="28px" height="21px"
+                          xlink:href="data:img/png;base64,iVBORw0KGgoAAAANSUhEUgAAABwAAAAVCAQAAAD/C0bXAAAABGdBTUEAALGPC/xhBQAAACBjSFJNAAB6JgAAgIQAAPoAAACA6AAAdTAAAOpgAAA6mAAAF3CculE8AAAAAmJLR0QA/4ePzL8AAAAHdElNRQfkBxgMKgrgKIwGAAACG0lEQVQ4y33UUWjVZRjH8d/ZznS2TRSi3RgUjgkFLcXJBLVMCKEEyZCCoEihhhfeeNWVNyHsShSREJUuqq0uVglBV0klBJPQIGKNaiQxWImLNufWOft0sf+OO5un33Px532e//d5nvd5X96SLGkkSdKblPNK9mR9fshgfr0eSUqR3iTpzu70ZVdGYqVt8pUl/em1utgpM0VkfCXW7Atw2fPuYd7TtViXWdzxtQE90WGHPn12ekz0FRnfELfARbFOr50u4C9bFtPElVpjf9vsKC54wgbR5UUVo+Jc7Z/3luo3pT1JMptKZlOJJGuyPuUkbdmYUhaSzGUulSSVnK3N0suoOmaLTrG1yPymmATnxRo9buGz+9OIFjcxXDhKPgDD+s3jjm4RL4Fnl4PRj6rthavDYG1H4/YV3m/xjXI9uMEELi07lOcMOOOoh4v1PlXqz3TxcxLTHl11GZbsY4xZtxp83D94twHW5R5O1HvLSZLfMpQjeT03Uo2UslwLOZi1uZ33U68iwzZV/6dzK/soF/z3OZ3DKeXfSEuakiSVVNOc5mzMQ+lJOZUHVYxo06LLk9q1ale2yVM6tTgMXq2vWN/AOyZNu6JTHDLmrht6xJf4UWsjcC/mTeEXn1vAJL6z3wh4qxF4HEPerg3kdwfMmjJarIcbgc9gwQx+8qk5TOGa/YZ84iN7G+/xhJ/94UOPiBeMmHB12QtQZ/8B+a6uuTujQTgAAAAASUVORK5CYII=" />
+                      </svg>
+                    </button>
+                  </div>
+                </div>
+                <!-- /.product__card -->
               </div>
-            </div>
-            <!-- /.product__card -->
-            <div class="product__card">
-              <img class="product__img" src="img/product-nophoto.jpg" alt="product image">
-              <a href="#" class="product__title stretched-link">Самый клевый чайник, который надо купить!</a>
-              <div class="product-info">
-                <div class="product__price">1 900 р.</div>
-                <button type="button" class="product__btn">
-                  <svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="28px"
-                    height="21px">
-                    <image x="0px" y="0px" width="28px" height="21px"
-                      xlink:href="data:img/png;base64,iVBORw0KGgoAAAANSUhEUgAAABwAAAAVCAQAAAD/C0bXAAAABGdBTUEAALGPC/xhBQAAACBjSFJNAAB6JgAAgIQAAPoAAACA6AAAdTAAAOpgAAA6mAAAF3CculE8AAAAAmJLR0QA/4ePzL8AAAAHdElNRQfkBxgMKgrgKIwGAAACG0lEQVQ4y33UUWjVZRjH8d/ZznS2TRSi3RgUjgkFLcXJBLVMCKEEyZCCoEihhhfeeNWVNyHsShSREJUuqq0uVglBV0klBJPQIGKNaiQxWImLNufWOft0sf+OO5un33Px532e//d5nvd5X96SLGkkSdKblPNK9mR9fshgfr0eSUqR3iTpzu70ZVdGYqVt8pUl/em1utgpM0VkfCXW7Atw2fPuYd7TtViXWdzxtQE90WGHPn12ekz0FRnfELfARbFOr50u4C9bFtPElVpjf9vsKC54wgbR5UUVo+Jc7Z/3luo3pT1JMptKZlOJJGuyPuUkbdmYUhaSzGUulSSVnK3N0suoOmaLTrG1yPymmATnxRo9buGz+9OIFjcxXDhKPgDD+s3jjm4RL4Fnl4PRj6rthavDYG1H4/YV3m/xjXI9uMEELi07lOcMOOOoh4v1PlXqz3TxcxLTHl11GZbsY4xZtxp83D94twHW5R5O1HvLSZLfMpQjeT03Uo2UslwLOZi1uZ33U68iwzZV/6dzK/soF/z3OZ3DKeXfSEuakiSVVNOc5mzMQ+lJOZUHVYxo06LLk9q1ale2yVM6tTgMXq2vWN/AOyZNu6JTHDLmrht6xJf4UWsjcC/mTeEXn1vAJL6z3wh4qxF4HEPerg3kdwfMmjJarIcbgc9gwQx+8qk5TOGa/YZ84iN7G+/xhJ/94UOPiBeMmHB12QtQZ/8B+a6uuTujQTgAAAAASUVORK5CYII=" />
-                  </svg>
-                </button>
+              <!-- /.product__col -->
+              <div class="product__col">
+                <div class="product__card">
+                  <img class="product__img" src="img/product-nophoto.jpg" alt="product image">
+                  <a href="#" class="product__title stretched-link">Самый клевый чайник, который надо купить!</a>
+                  <div class="product-info">
+                    <div class="product__price">1 900 р.</div>
+                    <button type="button" class="product__btn">
+                      <svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="28px"
+                        height="21px">
+                        <image x="0px" y="0px" width="28px" height="21px"
+                          xlink:href="data:img/png;base64,iVBORw0KGgoAAAANSUhEUgAAABwAAAAVCAQAAAD/C0bXAAAABGdBTUEAALGPC/xhBQAAACBjSFJNAAB6JgAAgIQAAPoAAACA6AAAdTAAAOpgAAA6mAAAF3CculE8AAAAAmJLR0QA/4ePzL8AAAAHdElNRQfkBxgMKgrgKIwGAAACG0lEQVQ4y33UUWjVZRjH8d/ZznS2TRSi3RgUjgkFLcXJBLVMCKEEyZCCoEihhhfeeNWVNyHsShSREJUuqq0uVglBV0klBJPQIGKNaiQxWImLNufWOft0sf+OO5un33Px532e//d5nvd5X96SLGkkSdKblPNK9mR9fshgfr0eSUqR3iTpzu70ZVdGYqVt8pUl/em1utgpM0VkfCXW7Atw2fPuYd7TtViXWdzxtQE90WGHPn12ekz0FRnfELfARbFOr50u4C9bFtPElVpjf9vsKC54wgbR5UUVo+Jc7Z/3luo3pT1JMptKZlOJJGuyPuUkbdmYUhaSzGUulSSVnK3N0suoOmaLTrG1yPymmATnxRo9buGz+9OIFjcxXDhKPgDD+s3jjm4RL4Fnl4PRj6rthavDYG1H4/YV3m/xjXI9uMEELi07lOcMOOOoh4v1PlXqz3TxcxLTHl11GZbsY4xZtxp83D94twHW5R5O1HvLSZLfMpQjeT03Uo2UslwLOZi1uZ33U68iwzZV/6dzK/soF/z3OZ3DKeXfSEuakiSVVNOc5mzMQ+lJOZUHVYxo06LLk9q1ale2yVM6tTgMXq2vWN/AOyZNu6JTHDLmrht6xJf4UWsjcC/mTeEXn1vAJL6z3wh4qxF4HEPerg3kdwfMmjJarIcbgc9gwQx+8qk5TOGa/YZ84iN7G+/xhJ/94UOPiBeMmHB12QtQZ/8B+a6uuTujQTgAAAAASUVORK5CYII=" />
+                      </svg>
+                    </button>
+                  </div>
+                </div>
+                <!-- /.product__card -->
               </div>
+              <!-- /.product__col -->
             </div>
-            <!-- /.product__card -->
+            <!-- /.products__container -->
+
+            <!-- pagination -->
+            <div class="pagination">
+              <ul class="pag__list">
+                <li class="pag__item">
+                  <a href="" class="pag__link">1</a>
+                </li>
+                <li class="pag__item">
+                  <a href="" class="pag__link">2</a>
+                </li>
+                <li class="pag__item active">
+                  <a href="" class="pag__link">3</a>
+                </li>
+                <li class="pag__item">
+                  <a href="" class="pag__link">4</a>
+                </li>
+                <li class="pag__item">
+                  <a href="" class="pag__link">5</a>
+                </li>
+                <li class="pag__item">
+                  <a href="" class="pag__link">6</a>
+                </li>
+                <li class="pag__item">
+                  <a href="" class="pag__link">7</a>
+                </li>
+              </ul>
+            </div>
+            <!-- /.pagination -->
+
+            <!-- about -->
+            <section class="about">
+              <div class="about__text">
+                <p class="about__text--left">
+                  Компания «Пиксель Плюс» существует более 6 лет, за это время мы принимали участие в разработке более
+                  чем
+                  700 сайтов, поэтому можем уверенно называть себя профессионалами. На данный момент наш коллектив
+                  состоит
+                  из более чем 30 сотрудников работающих в двух офисах в Москве и Зеленограде.характерные для этого
+                  жанра
+                  мотивы: неразделённой любви, ухода молодости, угасания души.
+                </p>
+                <p class="about__text--right">
+                  Одним из основных направлений работ нашей компании является поисковое продвижение сайтов, на данной
+                  момент мы работаем с более чем 150 постоянными клиентами по более чем 11 000 поисковым запросам. При
+                  этом в работе основной акцент мы делаем на качестве работ, а так же применяем собственные уникальные
+                  разработки в области SEO продвижения. На данный момент отдел SEO состоит из 9 человек под руководством
+                  ведущего специалиста, преимущественно работающих в нашем московском офисе.
+                </p>
+              </div>
+            </section>
+            <!-- /.about -->
+
           </div>
           <!-- /.products -->
-
-          <!-- /.pagination -->
-          <div class="pagination">
-            <ol class="pag-list">
-              <li class="pag-item">
-                <a href="" class="pag-link">1</a>
-              </li>
-              <li class="pag-item">
-                <a href="" class="pag-link">2</a>
-              </li>
-              <li class="pag-item">
-                <a href="" class="pag-link">3</a>
-              </li>
-            </ol>
-          </div>
-          <!-- /.pagination -->
 
       </div>
       </section>
@@ -273,10 +327,113 @@
     </main>
     <!-- /.main -->
 
+    <!-- footer -->
     <footer class="footer">
+      <div class="container">
 
+        <div class="footer__container">
+          <div class="footer__col info">
+            <div class="footer__info">
+              <p class="company__name">
+                © 2012–2013 ЗАО «Компания»
+              </p>
+              <a href="mailto:info@name.ru" class="footer__email">info@name.ru</a>
+              <!-- /.footer__email -->
+            </div>
+            <!-- /.footer-info -->
+          </div>
+          <!-- /.footer__col -->
+
+          <div class="footer__col menu">
+            <ul class="footer__menu">
+              <li class="menu__item">
+                <a href="" class="menu__link">Главная</a>
+                <!-- /.menu__link -->
+              </li>
+              <!-- /.menu__item -->
+              <li class="menu__item">
+                <a href="" class="menu__link">Каталог</a>
+                <!-- /.menu__link -->
+              </li>
+              <!-- /.menu__item -->
+              <li class="menu__item">
+                <a href="" class="menu__link">Доставка и оплата</a>
+                <!-- /.menu__link -->
+              </li>
+              <!-- /.menu__item -->
+              <li class="menu__item">
+                <a href="" class="menu__link">Прайс-лист</a>
+                <!-- /.menu__link -->
+              </li>
+              <!-- /.menu__item -->
+              <li class="menu__item">
+                <a href="" class="menu__link">Контакты</a>
+                <!-- /.menu__link -->
+              </li>
+              <!-- /.menu__item -->
+            </ul>
+            <!-- /.footer__menu -->
+          </div>
+          <!-- /.footer__col -->
+
+          <div class="footer__col dev">
+            <div class="footer__dev">
+              <img src="img/dev-company-logo.png" class="dev__logo">
+              <p class="dev__info">
+                <a href="#" class="dev__link">Разработка сайта</a>
+                - компания «Пиксель Плюс»
+              </p>
+            </div>
+            <!-- /.footer__dev -->
+          </div>
+          <!-- /.footer__col -->
+        </div>
+      </div>
+      <!-- /.container -->
     </footer>
     <!-- /.footer -->
+
+    <!-- modal -->
+    <div class="modal" id="modal-js">
+
+      <div class="modal__form">
+        <button type="button" class="modal__close" id="modal__close-js">
+          <img src="img/close.svg" alt="close">
+        </button>
+        <!-- /.modal__close -->
+
+        <div class="modal__title">Обратная связь</div>
+
+        <form action="#" class="form" id="form-js">
+          <div class="form-control">
+            <label for="name">Ваше имя *</label>
+            <input type="text" name="name" id="name" placeholder="Например, Василий" required>
+          </div>
+          <!-- /.form-control -->
+          <div class="form-control">
+            <label for="phone">Телефон *</label>
+            <input type="tel" id="phone" name="phone" placeholder="Например, 380(99)-999-99-99"
+              pattern="[0-9]{5}-[0-9]{3}-[0-9]{2}-[0-9]{2}" required>
+          </div>
+          <!-- /.form-control -->
+          <div class="form-control">
+            <label for="email">Email *</label>
+            <input type="email" name="email" id="email" placeholder="example@example.com">
+          </div>
+          <!-- /.form-control -->
+          <div class="form-control">
+            <label for="message">Сообщение</label>
+            <textarea name="message" id="message" cols="30" rows="10" placeholder="Ваше сообщение"></textarea>
+          </div>
+          <!-- /.form-control -->
+
+          <button type="submit" class="form__btn">Отправить</button>
+        </form>
+      </div>
+
+
+    </div>
+    <!-- modal -->
 
     <script src="js/scripts.min.js"></script>
   </body>

@@ -1,6 +1,10 @@
 .slider {
   margin: auto;
   background-color: #f9f9f9;
+
+  @include _768 {
+    display: none;
+  }
 }
 
 .slider__item>img {
@@ -14,7 +18,7 @@
   display: inline-block;
   text-align: center;
   background-color: #d1d1d1;
-  z-index: 9;
+  z-index: 1;
 
   &:hover,
   &:focus {

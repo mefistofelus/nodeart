@@ -1,6 +1,36 @@
 /*==========  BREAKPOINTS MIXINS  ==========*/
 /*==========  Desktop First  ==========*/
 
+@mixin _1920 {
+  @media all and (max-width: 1200px) {
+    @content;
+  }
+}
+
+@mixin _1600 {
+  @media all and (max-width: 1200px) {
+    @content;
+  }
+}
+
+@mixin _1440 {
+  @media all and (max-width: 1200px) {
+    @content;
+  }
+}
+
+@mixin _1380 {
+  @media all and (max-width: 1200px) {
+    @content;
+  }
+}
+
+@mixin _1240 {
+  @media all and (max-width: 1200px) {
+    @content;
+  }
+}
+
 @mixin _1200 {
   @media all and (max-width: 1200px) {
     @content;

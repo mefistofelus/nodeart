@@ -1,0 +1,27 @@
+.pagination {
+  .pag__list {
+    margin-top: rem(10);
+    margin-bottom: rem(30);
+    padding: 0;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+
+  .pag__item.active .pag__link {
+    font-size: rem(18);
+    color: #444444;
+  }
+
+  .pag__link {
+    display: block;
+    padding: 0 rem(10);
+    font-size: inherit;
+    line-height: 22px;
+    color: #767676;
+
+    &:hover {
+      text-decoration: underline;
+    }
+  }
+}

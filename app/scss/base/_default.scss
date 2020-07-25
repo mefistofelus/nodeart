@@ -60,7 +60,8 @@ textarea {
   outline: none;
 
   &:focus:required:invalid {
-    border-color: red
+    border-color: red;
+    box-shadow: inset 0px 0px 13px 0px rgba(228, 106, 106, 0.75);
   }
 
   &:required:valid {
