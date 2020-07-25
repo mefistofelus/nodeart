@@ -1,17 +1,23 @@
 // USER VARIABLES SECTION
 
 // simple colors
-$primary-light: #FFFFFF; // Primary Light Color
-$primary-dark: #000000; // Primary Dark Color
-$primary-accent: #767676; // Primary Accent Color
-$primary-bgcolor: #ffffff; //Primary Background Color
-$section-grey: #dcdcdc; //Gray Background Section Color
-$section-dark-grey: #777777; //Gray Background Section Color
-// font colors
-$title-color: #333333; // Primary Title Color
-$heading-color: #BDBDBD; // Primary Heading Color
-$font-light: #FFFFFF; // Primary Light Font Color
-$font-dark: #000000; // Primary Dark Font Color
+$primary-light: #FFFFFF;
+$primary-dark: #000000;
+$primary-accent: #767676;
+$primary-bgcolor: #ffffff;
+$section-grey: #dcdcdc;
+$section-dark-grey: #777777;
+
+//slider colors
+$slider-bg: #f9f9f9;
+$slick-arrow-bg: #d1d1d1;
+
+// additional font colors
+$font-accent-dark: #444444;
+$title-color: #777777;
+$font-light: #FFFFFF;
+$font-dark: #000000;
+$link-hover-dark: #010101;
 
 // fonts
 $systemfont: -apple-system,

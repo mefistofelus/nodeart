@@ -1,8 +1,8 @@
 .footer {
   margin-top: rem(140);
   padding: rem(50) 0;
-  background-color: #777777;
-  color: #ffffff;
+  background-color: $section-dark-grey;
+  color: $font-light;
 
   @include _768 {
     margin-top: 0;

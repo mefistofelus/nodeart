@@ -39,7 +39,7 @@
     max-width: rem(170);
     margin-left: rem(13);
     font-family: $text-font;
-    color: #777777;
+    color: $title-color;
 
     .logo__title {
       margin-bottom: 1rem;
@@ -70,12 +70,12 @@
     font-family: $text-font;
     font-weight: 700;
     font-size: rem(24);
-    color: #767676;
+    color: $primary-accent;
     text-decoration: underline;
     text-decoration-style: dashed;
 
     &:hover {
-      color: lighten(#767676, 5)
+      color: lighten($primary-accent, 5)
     }
 
     @include _576 {
@@ -100,7 +100,7 @@
     padding: 0 rem(20);
     display: inline-flex;
     flex-wrap: wrap;
-    border-left: 2px solid #ffffff;
+    border-left: 2px solid $font-light;
 
     &:first-child {
       border-left: none;
@@ -108,7 +108,7 @@
   }
 
   .menu__link {
-    color: $primary-light;
+    color: $font-light;
     font-size: rem(30);
     position: relative;
     overflow: hidden;
@@ -129,7 +129,7 @@
       left: 0;
       width: 100%;
       height: 1px;
-      background-color: #fff;
+      background-color: $primary-light;
       transform: scale(0);
       transition: $transition ease-out;
     }
