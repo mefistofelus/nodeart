@@ -27,24 +27,8 @@ sans-serif; // System Font Family
 $text-font: 'PT-Sans',
 sans-serif; // PT Sans Font Family
 $custom-font: 'Open-Sans',
-sans-serif; // PT Sans Font Family
+sans-serif; // Open Sans Font Family
 $fontsize: 14; // Html, Body Primary Font Size
 
 //UTILITIES
 $transition: 0.35s;
-
-
-// Bootstrap compatible gutter variables
-$grid-gutter-width: 30px;
-$gutter: $grid-gutter-width;
-
-// Bootstrap container breakpoints
-$container-max-widths: (sm: 540px,
-  md: 720px,
-  lg: 960px,
-  xl: 1170px);
-
-// Bootstrap color variables
-$primary: $primary-accent;
-$btn-border-radius: 0;
-$nav-pills-border-radius: 0;
